@@ -22,7 +22,7 @@ let frames = {
 
 
 let loadImages = (callback) => {
-    let images = { idle: [], kick: [], punch: [], forward: [], backward:[], block: [] };
+    let images = { idle: [], kick: [], punch: [], forward: [], backward: [], block: [] };
     let imagesToLoad = 0;
 
     ["idle", "kick", "punch", "forward", "backward", "block"].forEach((animation) => {
@@ -111,6 +111,6 @@ loadImages((images) => {
         {
             queuedAnimations.push("backward");
         }
-        
+
     });
 });
